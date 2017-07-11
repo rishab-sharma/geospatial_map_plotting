@@ -6,5 +6,5 @@ How to use the files:
 2) The front end+manual_map_marking directory contains the web app front end along with area plotting , bore_well plotting and geocoding tools attached.
 3) The shape_file_plotting directory contains python files to plot a shape file and superimpose it with other data layers.
 
-For manual_map_plotting-> GO to front end -> index.html
+For manual_map_plotting-> GO to front end -> index.html __
 For shape_file plotting-> Go to shape_file_plotting -> Run the python files in a Ipython IDLE (Spyder) , with dependencies such as (basemap ,matplotlib ,pyplot ,proj4)
