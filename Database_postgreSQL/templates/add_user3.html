@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Well Info</title>
+</head>
+<body>
+    <h1>Please Enter the Well- Name , Lat , Lng in your desired form</h1>
+    <form method="post" action="/post_well">
+        <label>Well_name</label><br>
+        <input id="name" name="name" type="text" /><br>
+        <label>latitude</label><br>
+        <input id="lat" name="lat" type="text" /><br>
+	<label>longitude</label><br>
+        <input id="lng" name="lng" type="text" /><br><br>
+        <input type="submit" />
+    </form><br>
+    <hr>
+    <h4><a href="/profile_view">The Profile Link</a></h4>
+    <hr>
+    <h2>The Data View</h2>
+    {% for well in mywell %}
+         <li>{{well.id}}. "{{well.name}}" with latitude {{well.lat}} and longitude {{well.lng}}</li>
+    {% endfor %}
+    <!--{{oneItem.name}}-->
+
+</body>
+</html>

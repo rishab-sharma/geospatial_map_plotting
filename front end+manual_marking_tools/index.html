@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Title -->
+        <title>ONGC Project</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Rishab Sharma">
+        <link rel="shortcut icon" type="image/x-icon" href="x.png">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" rel="stylesheet"> 
+        <link rel="stylesheet" href="font-awesome.min.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="vegas.min.css">
+        <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <script src="modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="theme-preloader">
+            <div class="sk-circle">
+                <div class="sk-circle1 sk-child"></div>
+                <div class="sk-circle2 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle4 sk-child"></div>
+                <div class="sk-circle5 sk-child"></div>
+                <div class="sk-circle6 sk-child"></div>
+                <div class="sk-circle7 sk-child"></div>
+                <div class="sk-circle8 sk-child"></div>
+                <div class="sk-circle9 sk-child"></div>
+                <div class="sk-circle10 sk-child"></div>
+                <div class="sk-circle11 sk-child"></div>
+                <div class="sk-circle12 sk-child"></div>
+            </div>
+        </div>
+        <!-- Particles JS Background -->
+        <div id="particles-js"></div>
+
+        <!-- Background Slider Area -->
+        <div class="main-bgslider">
+            <!-- Wrappar Text Area -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10">
+                        <div class="wrappar-text">
+                            <div class="wraper-text-valign">
+                                <!-- Main Content Area -->
+                                <section class="main-content-area">
+                                    <h1 class="animated fadeInUp"> <span>ONGC Project - map marking WebApp</span></h1>
+                                    <p class="animated fadeInUp"></p>
+									<div class="theme-btn-area">
+                                        <a href="#" class="theme-btn animated fadeInRight">About Our Project</a>
+					<a href="#" class="theme-ghost-btn animated fadeInLeft">Email Us</a>
+                                    </div>
+				   <a href="draw.html" class="new">Map Link</a>
+                                   <a href="poly_lines.html" class="new">Plotting Area</a> 
+				   <hr><a href="geocode.html" class="new">Geocode Borehole</a>
+                                </section>
+                                <footer class="main-footer-area">
+                                   
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!--AKS EMAIL AREA/Join  US AREA-->
+		<div class="join-us-area">
+            <div class="jon-us-content">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                <h3>Email Us</h3>
+                <p>We would like to hear from you always!</p>
+                <!-- Email Us form -->
+                <form action="background-slider.html">
+                    <input type="text" placeholder="Your Email ID">
+                    <input type="text" placeholder="Your Message">
+                    <button type="submit">Email</button>
+                </form>
+            </div>
+        </div>
+		<!--Email Ends-->
+        <div class="main-sidebar">
+            <div class="siderbar-btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="sidebar-contant">
+                <div class="about-us-area">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <h2>About Us</h2>
+                    <p>MAP PLOTTING USING GEOSPATIAL DATABASE is 2 way project in which a geospatial database can be plotted on a map depicting the various polygons 			    which refer to the lease area of a company along with the point data depicting the wells and boreholes.The geospatial data consists of shape files 			   (contains the array of lat-long points of lease polygon)  and the well lat-long in degree.The map plotting is done using Interactive python and its 				libraries ( matplotlib , basemap , _proj4(for degree to cartesian conversion) , pyplot , mpl_toolkits). The other way is collecting geospatial 				data by manual map marking. In this method we use google map api in javascript and connect it to a PostgreSQL using SQLAlchemy and a Python 				microframework of Jinja2 (Flask).The “OnClick” events on the map surface are handled by the JS code and responses are stored in the PostgreSQL 				database , thus enabling the creation of a geospatial database with lat-long points which refer to the earlier mentioned parameter of boreholes 			attributes.Thus we have developed a 2-way approach to interact with a geospatial database enabling both its creation and its visualisation.</p>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- Js File -->
+        <script src="particles.min.js"></script>
+        <script src="package-json.js"></script>
+        <script src="jquery-2.2.4.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="vegas.min.js"></script>
+        <script>
+            /*  ======================================
+                Backgroun Slider
+                ====================================== */
+
+            var bgsliderVegas = $(".main-bgslider, body");
+            if ($('.main-bgslider').length) {
+
+                bgsliderVegas.vegas({
+                    slides: [
+                        { src: '01.jpg' }
+                        // further slide definitions
+                    ],
+                    delay: 7000,
+                    overlay: true,
+                    animation: ['kenburns', 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight', 'kenburnsUpLeft', 'kenburnsUpRight', 'kenburnsDownLeft', 'kenburnsDownRight']
+                });
+            }
+        </script>
+        <script src="jquery.countdown.min.js"></script>
+        <script src="main.js"></script>
+
+        <script>
+        /*  ======================================
+            Count Down
+        ====================================== */
+            var themeCountDown = $("#coundt-down");            
+            themeCountDown.countdown("2017/06/25", function (event) {
+                $(this).html(event.strftime('' + '<div class="single-count"><span>%-m</span> Month%!m</div>' + '<div class="single-count"><span>%-d</span> Day%!d</div>' + '<div class="single-count"><span>%H</span> Hours</div>' + '<div class="single-count"><span>%M</span> Minutes</div>' + '<div class="single-count"><span>%S</span> Seconds</div>'));
+            });        
+        </script>
+    </body>
+</html>
