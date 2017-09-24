@@ -1,4 +1,7 @@
-# geospatial_map_plotting
+# Geospatial map Plotting
+
+Author: Rishab Sharma - MAIT , New Delhi
+
 MAP PLOTTING USING GEOSPATIAL DATABASE is 2 way project in which a geospatial database can be plotted on a map depicting the various polygons which refer to the lease area of a company along with the point data depicting the wells and boreholes.The geospatial data consists of shape files (contains the array of lat-long points of lease polygon)  and the well lat-long in degree.The map plotting is done using Interactive python and its libraries ( matplotlib , basemap , _proj4(for degree to cartesian conversion) , pyplot , mpl_toolkits). The other way is collecting geospatial data by manual map marking. In this method we use google map api in javascript and connect it to a PostgreSQL using SQLAlchemy and a Python microframework of Jinja2 (Flask).The “OnClick” events on the map surface are handled by the JS code and responses are stored in the PostgreSQL database , thus enabling the creation of a geospatial database with lat-long points which refer to the earlier mentioned parameter of boreholes attributes.Thus we have developed a 2-way approach to interact with a geospatial database enabling both its creation and its visualisation.
 
 How to use the files:
